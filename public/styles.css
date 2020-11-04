@@ -44,15 +44,26 @@ a {
   font-weight: 700; 
   font-size: 2.4rem;
   text-align: left;
+
+  animation-name: appear-from-top;
+  animation-duration: 1.3s;
 }
 
 /* Hero Image */
 
 .main__hero {
   margin: 6.4rem 0;
+
+  animation-name: appear-from-left;
+  animation-duration: 1s;
 }
 
 /* Content */
+
+.content {
+  animation-name: appear-from-left;
+  animation-duration: 1s;
+}
 
 .content__title {
   font-size: 4.8rem;
@@ -117,6 +128,11 @@ a {
     margin-right: 12.0rem;
   }
 
+  .content {
+    animation-name: appear-from-right;
+    animation-duration: 1s;
+  }
+
   .content__title {
     margin-bottom: 3.6rem;
   }
@@ -131,3 +147,32 @@ a {
 
 }
 
+@keyframes appear-from-left {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-from-right {
+  0% {
+    transform: translateX(30%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-from-top {
+  0% {
+    transform: translateY(-6rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
