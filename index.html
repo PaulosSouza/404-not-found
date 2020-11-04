@@ -16,80 +16,46 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <title>404 not found</title>
 
-    <title>Devchallenges</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+    <div class="container">
+      <header class="header">
+        <p class="header__title">
+          404 NOT FOUND
         </p>
-      </div>
+      </header>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <main class="main">
+
+        <img src="./Scarecrow.png" alt="Scarecrow" class="main__hero">
+
+        <section class="content">
+          <h1 class="content__title">
+            I have bad news for you
+          </h1>
+  
+          <h5 class="content__description">
+            The page you are looking for might be removed or is temporarily unavailable
+          </h5>
+
+          <div class="button">
+            <a href="#" class="button__text">
+              Back to HomePage
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__description">
+          Paulo Henrique @ DevChallenges.io
+        </p>
+      </footer>
     </div>
   </body>
 </html>
